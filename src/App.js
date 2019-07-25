@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import UserTable from './tables/UserTables';
 
 function App() {
+  const usersData = [
+    {id:1, name: 'Tania', username: 'floppydiskette'},
+    {id:2, name: 'Craig', username: 'siliconeidolon'},
+    {id:3, name: 'Ben', username: 'benisphere'}
+  ]
+
+  const [users, setUsers] = useState(usersData)
   return (
     <div className="container">
     <h1>CRUD App using Hooks</h1>

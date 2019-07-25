@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function UserTable() {
+const UserTable = () => (
     <table>
         <thead>
             <tr>
@@ -12,7 +12,7 @@ function UserTable() {
         </thead>
         <tbody>
             <tr>
-                <td>Name date</td>
+                <td>Name data</td>
                 <td>Username data</td>
                 <td>
                     <button className="button mute-button">Edit</button>
@@ -21,5 +21,6 @@ function UserTable() {
             </tr>
         </tbody>
     </table>
-}
+)
+
  export default UserTable;

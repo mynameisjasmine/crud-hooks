@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const UserTable = () => (
+const UserTable = props => (
     <table>
         <thead>
             <tr>
